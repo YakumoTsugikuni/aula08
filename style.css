@@ -28,3 +28,11 @@ header, footer{
     transform: scale(1.05);
     transition: all 0.3s;
 }
+.grid-item large{
+    grid-column: span 2;
+}
+@media (max-width: 720px) {
+    .grid-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
